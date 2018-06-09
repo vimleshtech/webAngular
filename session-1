@@ -1,0 +1,65 @@
+Environment Setup Angular 2/4/5/6
+===========================
+-> CDN	:
+		index.html
+			<script src=".........angular.js"  />
+
+-> CLI 	:
+	
+
+	Node.Js		: webpack engine 							->npm  : nod package manager
+			->webserver
+	
+	Angualr/cli		: library 
+
+	$npm i -g @angular/cli 
+
+
+	typescript compiler 		: tsc
+
+	webpack 			: lite-server
+				: node.js
+
+
+
+Project Structure
+=====================
+project1
+	e2e
+	node_moduels
+	src
+		-app
+			app.component.ts		4.
+			x
+			app.component.spec.ts
+
+			app.module.ts 3.	(componetns, service, directive, providers)
+
+		-assests
+
+		-index.html   		1.
+				<app-root></app-root> : selector 
+		-main.ts			2.
+		-style.css
+		....
+		....
+
+	package.json 
+	
+
+
+
+			
+		
+
+		
+	
+		
+	
+	
+
+Karma : for unit testing
+Jasmin
+		
+
+
