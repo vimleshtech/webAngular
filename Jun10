@@ -1,0 +1,68 @@
+Terms:
+============
+Selector :   <app-root>
+	  <app-body>
+	 <app-header>
+
+templateURL:
+			="body.component.html"
+
+styleURLs:
+		=['body.component.css','test.css']
+
+
+@			: annotation 
+Component		: is inbuilt methods to build template , and style with selector
+
+
+Type Script:		is extension or javascript 
+=================
+tsc 		: is compiler to convert .ts to .js 
+
+OOPS : object oriented programin system/structure 
+-class		: is wrapper of data member and function /methods
+-object
+-encapsulation 
+-abstraction/data hiding
+-contructor
+-inheritence
+-polymorphisam
+-interface 
+
+
+export : this can can be import in other .ts file 
+Interpolation:   {{ }}
+data binding:
+		1. one way binding 
+		2. two way binding
+			
+()		: event 
+{{}}		: Interpolation
+[]		: propeties 
+
+				
+==================
+ng g 			: generate 
+
+ng g c 			: component
+ng g s			: service   (collection of common functions/methods)
+ng g d			: directive (custom html properties)
+ng g p 			: pipe 
+
+ng model
+
+
+
+===js 
+a =10			: global variable 
+var a =10			: within function 
+let a =10			: within a block
+
+
+<input (click)="addata()" />
+
+     
+
+
+
+
