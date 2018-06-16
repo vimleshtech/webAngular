@@ -1,0 +1,79 @@
+style
+binding 
+=================
+
+arrow function  / es6
+---------------------------------------------------------
+
+products=[
+	{pid:1,pname:'dove',price:40},
+	{pid:2,pname:'lux',price:90},
+	{pid:3,pname:'lakme',price:400}	
+	]
+
+filter
+sorting
+
+
+products =>(a,b) 
+
+
+
+pipe syntax
+=============
+{{ title   | uppercase }}
+{{ title   | lowercase}}
+
+--custom piple
+name  ='nitin'
+
+
+{{ name | pipename:'mr'}}
+
+transorm(value,p1)
+{
+	return	p1+ ' '+value+' '+p2
+
+}
+
+mr nitin end 
+
+
+
+
+
+
+
+
+eid  ename   mgrid
+1    raman  null
+2   jatin      1
+
+
+
+output:
+eid ename mgrname 
+
+
+a = [111,2,344]
+
+for (i=0; i<3;i++)
+{
+	for (j=i+1; j<3;j++)
+	{
+		if(a[i] > a[j])
+		{
+			t  = a[i]
+			a[i] = a[j]
+			a[j] = t
+		}
+	
+
+	}
+
+}	
+
+
+
+directive
+-----------------------------------
