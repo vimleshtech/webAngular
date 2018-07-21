@@ -1,0 +1,53 @@
+Class
+Object
+Ecapsulation
+Abstration/Data Hiding
+**Constructor 	: is function which invokes automatically when object will create
+		 ** can be single constructor in a class :
+	
+Iheritence:
+		1. single level
+			A-> B
+		2. multi level
+			A->B->C....
+
+			class a{}
+			class b extends a{}
+			class c extens b{}
+		3. tree/hirarchinal
+			A-> B,C,D->M,N
+
+
+			class a{}
+			class b extends a{}
+			class c extens a{}
+
+			
+		4. hybrid
+			class a{}
+			class b extends a{}
+			class c extens b{}
+
+			class m{}
+			class n extends m{}
+			class t extens m{}
+				
+		5. multiple (doesn't support)
+
+				A,B,C -> C
+				
+Polymorphisam 
+		-overloading (same function with multiple argument )
+		-overriding 
+
+
+**Interface  : is abstract class or known as snapshot of object
+		
+**Enum			: is data type which store multiple values
+**Access Specifier
+**Access modifier 
+			this
+			super
+			const 
+			
+
