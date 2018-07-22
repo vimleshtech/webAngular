@@ -1,0 +1,20 @@
+Polymorphisam
+Interface		: is abstract class means function cannot be implemented in 			interface 
+Enum
+
+Parent -> Child		: @Input 
+FormDriven	:
+			FormBuilder
+			Validator
+			FormGroup 
+
+Validation
+
+=================
+Dynamic Form 
+
+Polymorphisam : poly is many , morphisam multiple forms 
+==================
+-> multiple function have same i.e. polymorphisam
+
+
