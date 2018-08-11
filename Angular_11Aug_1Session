@@ -1,0 +1,95 @@
+Today's Topics
+===================
+-MEAN Overview 
+-Angular Environment
+-Angular App/Project Structure and Life Cycle
+-Component
+-Events 
+
+Angular Environment
+===========================
+-CDN  : online link ref 
+	<script href="....."  />
+ 	
+-CLI  :
+	 enterprise application 
+	
+Required Software:
+	-NodeJs 
+		V8 + 
+		V8.11
+		https://nodejs.org/en/download/
+
+	
+	-AngularCLI
+		$node -v
+		$npm install -g @angular/cli 
+
+
+	-Editor/IDE (integrated development env.)
+		-VSCode  : free
+		-Sublime : paid for commm.
+		-VisualStudio: paid for comm.
+		etc.
+
+		https://code.visualstudio.com/download
+
+
+
+
+Open console/Terminal in VSCode
+============
+1. Go to view menu and click on open integrated terminal 
+$dir 					: show list of files and folder
+$node -v   				: show version of nodejs
+$npm install -g @angular/cli		: install angular clid (node package manager)
+
+--create angular project
+$ng new project-name		 : create new project
+$cd project-name		: change directory 
+$ng serve			: to build and run the project
+	default port is : 
+		https://localhost:4200
+	
+$ng serve --o		or open 
+			: to build , run and open the browser 
+
+
+	
+	
+-Angular App/Project Structure and Life Cycle
+==============================
+1. index.html
+2. main.ts
+3. app.module.ts
+4. app.component.ts		     : selector 
+		-app.component.html  : template / view 
+		-app.component.css   : style 	
+		
+
+
+Create new component
+----------------
+$ng generate component mypage
+or
+$ng g c mypage
+	mypage.component.html		: VIEW 
+	mypage.component.css
+	mypage.component.spec.ts : testing
+	mypage.component.ts 		: CODE BEHIND 
+					-selector 
+					app-mypage 
+
+	**add selector in app.component.html file 
+	
+
+
+ctrl+c : to terminate ther terminal 
+
+
+
+	
+
+
+
+
