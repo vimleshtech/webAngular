@@ -1,0 +1,105 @@
+
+-Bootstrap 
+====================================
+	- install bootstramp 
+
+		$npm install bootstrap --save 
+	
+	-add ref of bootstrap-min.css file in angular project
+		-go to angular.json file
+
+		then
+
+		"styles": [
+                        "src/styles.css"
+                 ]
+
+
+	after change:
+		 "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+
+
+			
+-Angular Pipe : pipe is function which works when page/content will render 
+=======================================================
+There are fllowing inbuilt pipes:
+
+{{name | uppercase}}
+
+{{name | lowercase}}
+
+{{name | length}}
+
+
+-
+
+
+Custom pipe:
+-------------------------
+ng g p mypipe 
+	
+--
+ transform(value: any, args?: any): any {
+
+    if(args=='asc')
+      return value.sort()
+    else 
+      return value.sort().reverse()
+
+
+  }
+
+---
+.html
+
+
+  <h2>
+
+    {{names}}
+  </h2>
+  <h2>
+    {{names | mypipe:'asc'}}
+  </h2>
+  <h2>
+    {{names | mypipe:'desc' }}
+  </h2>
+
+
+
+Directive
+=======================================
+ng g d mydir
+
+
+import { Directive,ElementRef } from '@angular/core';
+
+@Directive({
+  selector: '[appMydir]'
+})
+export class MydirDirective {
+
+  name
+  constructor(el:ElementRef) {
+
+    this.name ='a'
+    
+      el.nativeElement.style.color="red";
+      el.nativeElement.innerHTML="hi";
+
+   }
+
+}
+
+
+
+--
+.html
+
+<h1 appMydir>
+  {{title}}
+</h1>
+
+
