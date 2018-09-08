@@ -1,0 +1,35 @@
+Web  Service and JSON calling
+==============================
+JSON Format:
+	{{id:111,name:'raman',age:23}
+	{id:111,name:'raman',age:23}
+	{id:111,name:'raman',age:23}
+	{id:111,name:'raman',age:23}
+	{id:111,name:'raman',age:23}}
+
+	a = [{id:1,name:'raman',age:23}
+	{id:2,name:'nidhi',age:23}
+	{id:3,name:'divya',age:23}
+	{id:4,name:'jatin',age:23}
+	{id:5,name:'aman',age:23}]
+
+There are following way to inteact with JSON file / web service / web API:
+
+1. Promise : fetch 
+	fetch(url)
+	.then(res=> res.json())
+	.then(out=> console.log(out))
+
+2. http
+    HttpClient 
+		
+
+Parent and Child
+=======================
+@Input
+
+
+
+
+
+
