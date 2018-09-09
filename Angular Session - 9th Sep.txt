@@ -1,0 +1,88 @@
+
+Today's Topics
+=================
+-> Multiple component Navigation / Router 
+
+	Add Product
+	Show Product
+	Add Customer
+	
+
+-> create new component
+	ng g component <addproduct>
+	ng g component <showproduct>
+	ng g component <customer>
+
+component's Structure
+========================
+project->src->app 
+
+addproduct
+	-addproduct.component.html: layout /template 	1. edit/add some content
+	-addproduct.component.css	: style
+	-addproduct.component-spec.ts	: spec.ts - testing
+	-addproduct.component.ts	: typescript : event 2. 	
+
+
+	@Component({
+  
+		selector: 'app-showproduct',
+     //selector or custome tag
+		templateUrl: './showproduct.component.html',
+  
+		styleUrls: ['./showproduct.component.css']
+
+
+	})
+
+	//selector or custome tag
+	app-showproduct
+
+
+		
+
+
+-> go to app.component.html 
+	add the reference of all above selector 
+	
+
+ng serve --port  4201
+
+Router 
+=================
+app.module.ts
+
+
+import { RouterModule } from '@angular/router';
+
+import { Router } from '@angular/router/src/router';
+
+
+
+
+
+
+imports: [
+	RouterModule.forRoot([
+            
+	
+	{path: '',component:AddproductComponent},
+            
+	{path: 'parent',component:ShowproductComponent}
+   ,
+
+
+
+	])
+
+
+
+
+
+-> go to app.component.html 
+
+
+expression : interpoloation 
+===========================
+
+	{{}}
