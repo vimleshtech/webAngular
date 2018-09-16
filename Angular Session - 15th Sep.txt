@@ -1,0 +1,155 @@
+Today's Topics
+==================
+-Service
+-app.module.ts
+-Typescript
+
+-Modules
+		-BrowserModule
+		-NgModule		: core module 
+		-ngFormsModule		: form control	*
+		-ReactiveFormsModule	: auto reponse 	*
+		-HttpClientModule 	: API CALL 
+			
+-ngFrom Module
+			FormsModule
+			ReactiveFormsModule
+-form validation
+			ValidationGroup
+			FormGroup
+			Control	
+				
+
+		app.module.ts
+			imports:	
+			[	ReactiveFormsModule
+				FormsModule,
+			]
+	-in component .ts
+		import { FormGroup,  FormControl } from '@angular/forms';
+
+		
+		myform: FormGroup;
+
+		in ngonit()
+		{
+
+			
+    this.myform = new FormGroup({
+    
+				        name: new FormGroup({ 
+        
+    					firstName: new FormControl(), 
+          
+					lastName: new FormControl(),
+       
+					 }),
+        
+					email: new FormControl(),
+        
+					password: new FormControl(),
+       
+					language: new FormControl()
+    
+				});
+
+		}
+
+	in component.html
+			<form [formGroup]="myform"> 
+				 <input type="text"
+      class="form-control"
+          				     formControlName="firstName" 
+             
+  required>
+
+
+
+Terms:
+===========
+-component		: web component which is part of web page
+
+		>ng genrate component header
+		or
+		>ng g c header
+		@Component
+
+
+-Service		: common functions which can be access/call in any component
+
+	>ng g s myutils
+	 src/app
+		myutils.service.ts
+			@Injectable
+		myutils.service.spec.ts
+
+
+
+-Directive		: is custom tag which works like function to decorate the html 			tags or element
+		>ng g d mydir
+
+
+-Pipe	: is function (few are inbuilts) and we can also create 		custom pipe which can be use any function when page/dom will render
+	>ng g p mypip
+
+
+
+
+app.module.ts
+===================
+
+@NgModule	: @ is annotations 	
+	declarations	:
+				-component
+				-directive
+				-pipe 
+	imports		: angular module dependency / librar 
+			: we need to import required modules 
+	providers	:  typescrpt class, model 
+			
+	bootstrap	: startup/index/landling component 
+
+Typescript
+======================
+Data type:
+	number
+	string
+	boolean
+	date
+	function 
+	any
+
+syntax :
+	a:number;
+	b:string;
+	x:string='abcd'
+	z='xyz'
+			
+	y=''
+
+class: is wrapper of data member and functions
+data member:
+	a:number
+	b:string
+
+
+construnctor:	is function function which invokes automatically when object will 		create
+
+
+function/method:
+	add()
+	{
+
+	}	
+
+	add(a:number,b)
+	{
+
+	}
+
+	add()
+	{
+		return null;
+	}
+
+

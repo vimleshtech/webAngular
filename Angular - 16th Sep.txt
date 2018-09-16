@@ -1,0 +1,57 @@
+Unit Testing
+================
+	Jasmine  : ES6 /JavaScript base framework for unit testing
+	Karma    : is develop top of the jasmine 
+	
+	app.componnet.spec.ts
+
+	describe	 : what to test
+	it		: test case
+	expect()	: 	
+	
+	>ng test 
+
+Validation : form validation 
+================
+	html5 
+		required
+		maxlenght
+		minlenght
+		email 
+		number
+	
+	
+	Angualar:
+		dirty
+		no-dirty
+		touch 
+		no-touch
+		
+There are following inbuilt module/class:
+	-FormGroup		
+				<form> </form>
+	-FormControl
+				-control, tags (input , checkbox, dropdown)
+	-FormBuilder
+				
+	-Validator 
+				
+	
+
+	create object of form grjop :
+		
+		registerForm: FormGroup;
+
+		constructor(private formBuilder: FormBuilder) { }
+
+
+		ngOnInit() {
+
+      this.registerForm = this.formBuilder.group({          
+          firstName: ['', Validators.required],
+          lastName: ['', Validators.required],
+          email: ['', [Validators.required, Validators.email]],
+          password: ['', [Validators.required, Validators.minLength(6)]]
+      });
+  }
+
