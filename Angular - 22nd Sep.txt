@@ -1,0 +1,88 @@
+HttpClient
+===============
+rsjx
+==================
+HttpClient
+	suscribe()
+	
+private o : HttpClient
+	
+
+step 1: app.module.ts
+
+	import { HttpClientModule } from '@angular/common/http';
+
+	imports=
+		[
+		HttpClientModule
+		]
+
+step 2: in component.ts 
+	
+	import { HttpClient } from '@angular/common/http';
+	
+	constructor(private http:HttpClient)
+	{
+
+	}
+
+==================
+fetch(url).then().then()
+
+
+
+LocalStorage
+========================
+
+set/store value in localStorage
+
+	localStorage.setItem(key,value)
+
+get/read value from localStorage 
+	localStorage.getItem(key)	
+
+
+
+
+
+
+hello.js
+==============
+
+function a()
+{
+	console.log("hi");
+}
+
+
+tsc hello.js
+
+hello.ts
+
+a()
+{
+console.log("hi");
+}
+
+
+
+
+
+==============
+login   register  home   product ...
+==============
+
+Q. register and sigin 
+Q. sign with remember pwd 
+Q. order 
+		custname
+		pid
+		quantity
+		price
+
+	preview-comp.
+		back
+	
+
+
+
