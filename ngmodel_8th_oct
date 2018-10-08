@@ -1,0 +1,92 @@
+ngModel  : model driven framework
+====================
+
+		 		
+forms/fromgroup	:
+formcontrol	: 
+
+
+<form [formName]="frmname">
+<input type="text" [controlName]="fn" />
+
+
+</form>
+
+.ts
+=====
+
+
+frmname : FromGroup
+frmname={fn:data,ln:data,email:data}
+
+ngonit()
+{
+
+	this.frmname=new FormGroup()
+		{
+		fn=new FormControl(),
+		ln=new FormControl()
+		email=new FormControl()
+			
+		}
+}
+
+
+step :1  
+		add in component.ts
+
+	import { FormGroup,  FormControl } from '@angular/forms';
+
+	class a
+	{
+
+		myform: FormGroup;
+		noinit()
+		{
+			    this.myform = new FormGroup
+		({
+       
+		 name: new FormGroup({ 
+      
+		      	   firstName: new FormControl(), 
+          
+			  lastName: new FormControl(),
+       
+			 }),
+        email: new FormControl(),
+        password: new FormControl(),
+        language: new FormControl()
+    });
+
+
+		}		
+
+
+		
+
+	}
+	
+
+
+step 2: 	.html
+======
+<form [formName]="frmname">
+<input type="text" [controlName]="fn" />
+
+
+</form>
+
+
+step 3:
+===== in app.module.ts
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule} from '@angular/forms';
+
+
+imports =[
+ReactiveFormsModule,
+FormsModule,
+]
+
+
+
